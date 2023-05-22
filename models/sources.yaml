@@ -1,0 +1,33 @@
+sources:
+  - name: source_defined_data
+    schema: public_source_data
+    tables:
+      - name: mcdm
+        identifier: mcdm_paid_ads_basic_performance_structure
+  - name: source_data
+    schema: public_source_data
+    tables:
+      - name: bing
+        identifier: src_ads_bing_all_data
+        columns:
+          - name: date
+            tests:
+              - not_null
+      - name: facebook
+        identifier: src_ads_creative_facebook_all_data
+        columns:
+          - name: date
+            tests:
+              - not_null
+      - name: tiktok
+        identifier: src_ads_tiktok_ads_all_data
+        columns:
+          - name: date
+            tests:
+              - not_null
+      - name: twitter
+        identifier: src_promoted_tweets_twitter_all_data
+        columns:
+          - name: date
+            tests:
+              - not_null
