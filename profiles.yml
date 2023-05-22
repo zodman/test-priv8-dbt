@@ -1,0 +1,13 @@
+default:
+
+bigquery:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: improvado-387515
+      dataset: public
+      keyfile: "{{ env_var('JSON_FILE') }}"
+
+
