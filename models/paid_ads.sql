@@ -5,8 +5,7 @@
 
 WITH paid_ads  AS (
 
-
-    {% for channel in var('source_data') %}
+    {% for channel in var('sources_list') %}
 
         SELECT
             {% for column, type_ in get_mcdm_fields() %}

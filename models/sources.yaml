@@ -31,3 +31,9 @@ sources:
           - name: date
             tests:
               - not_null
+      # For adding new resources
+      # - name: custom   #or alias
+      #   identifier: src_custom  #file_name
+      #     - name: date
+      #       tests:
+      #         - not_null
