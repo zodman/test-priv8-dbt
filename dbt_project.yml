@@ -39,8 +39,8 @@ vars:
     bing:
       total_conversions: conv
     facebook:
-      total_conversions:
-        purchase
+      total_conversions: purchase
+        # TODO:deleteme
         # engagements: likes + shares + shares_2 + comments + comments_2 + views + views_2 + clicks + clicks_2
       engagements: likes + shares +  comments +  views +  clicks
 # for adding a new resource
