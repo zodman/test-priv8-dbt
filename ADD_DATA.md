@@ -27,7 +27,21 @@ To add a new resource, go to `models/sources.yaml` and add a new entry behind th
 #for the case of  seed/src_custom.csv
    - name: custom
      identifier: src_custom
+     columns:
+       - name: channel
+         tests:
+           - dbt_expectations.expect_column_to_exist
+       - name: date
+         tests:
+           - dbt_expectations.expect_column_to_exist
+           - not_null
+           - dbt_expectations.expect_column_values_to_be_in_type_list:
+               column_type_list: [date, datetime]
+
+
 ```
+
+** It's important add the test because that fields are required 
 
 Then add the  new source to the `sources_list` in `dbt_project.yml`
 

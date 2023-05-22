@@ -8,7 +8,7 @@ bigquery:
       method: service-account
       project: improvado-387515
       dataset: public
-      location: US
+      location: US # important
       keyfile: "{{ env_var('JSON_FILE') }}"
 
 
