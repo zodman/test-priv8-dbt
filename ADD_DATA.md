@@ -21,13 +21,12 @@ To add a CSV to the `seed/` directory, run `dbt seed` to seed the data into the 
 ### Add the resource:
 
 
-To add a new resource, go to `models/sources.yaml` and add a new entry behind the second entry `source_data`:
+To add a new resource, go to `models/sources.yaml` and add a new entry behind the entry `source_data`:
 
 ```
 #for the case of  seed/src_custom.csv
    - name: custom
      identifier: src_custom
-       - name: date
 ```
 
 Then add the  new source to the `sources_list` in `dbt_project.yml`
