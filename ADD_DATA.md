@@ -82,3 +82,7 @@ dbt run
 
 ```
 
+### Test:
+
+![dashboard-custom](https://imgur.com/FQBd9zG.png)
+
