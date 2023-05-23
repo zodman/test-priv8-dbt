@@ -58,7 +58,8 @@ vars:
     - tiktok
     - bing
     - facebook
-    - custom # new resource
+# the new resource
+    - custom 
 ```
 
 If needed remap some fields, You need to map the `column_destination: column_origin`
