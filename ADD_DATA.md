@@ -41,15 +41,15 @@ To add a new resource, go to `models/sources.yaml` and add a new entry behind th
 
 ```
 
-** It's important add the test because that fields are required 
+** **It's important add the test because that fields are required for the report**
 
-check if the source pass the test:
+Now you should check if the new source pass the test:
 
 ```
 dbt test
 ```
 
-Then add the  new source to the `sources_list` in `dbt_project.yml`
+Then add the new resource to the `sources_list` in `dbt_project.yml`
 
 ```
 vars:
