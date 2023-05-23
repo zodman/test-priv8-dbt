@@ -43,6 +43,12 @@ To add a new resource, go to `models/sources.yaml` and add a new entry behind th
 
 ** It's important add the test because that fields are required 
 
+check if the source pass the test:
+
+```
+dbt test
+```
+
 Then add the  new source to the `sources_list` in `dbt_project.yml`
 
 ```
@@ -68,4 +74,11 @@ in the `conver` column then need to:
       total_conversions: conver
 ````
 
-That's it.
+That's it. Execute run
+
+```
+
+dbt run 
+
+```
+

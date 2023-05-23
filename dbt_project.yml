@@ -24,7 +24,7 @@ seeds:
   +schema: source_data
   andres_dbt:
     custom: # For  testing porpouse  adding new seed
-      +enabled: false 
+      +enabled: false
 
 
 vars:
@@ -33,6 +33,8 @@ vars:
     - tiktok
     - bing
     - facebook
+    # For adding  a new resource
+    # - custom
   remap_fields:
     tiktok:
       total_conversions: conversions + skan_conversion
@@ -46,4 +48,4 @@ vars:
 # for adding a new resource
     # custom:
     #   total_conversions: conver
-
+    #
